@@ -67,10 +67,14 @@
             </div>
             <div class="domain__search__table">
               <div class="domain__form">
-                <form class="search-common">
-                  <div class="domain__form-www">www.</div>
-                  <input class="search-srting" type="text" name="search-input" placeholder="What do you want?">
-                  <div class="domain__select-common">
+                <form class="row search-common">
+                  <div class="col-auto d-none d-sm-flex domain__form-www">
+                    <span class="">www.</span>
+                  </div>
+                  <div class="col">
+                    <input class="search-srting" type="text" name="search-input" placeholder="What do you want?">
+                  </div>
+                  <div class="col-auto domain__select-common">
                     <button class="domain__select-btn">.com</button>
                     <ul class="domain__select">
                       <li value=".net">.net</li>
