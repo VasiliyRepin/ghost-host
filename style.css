@@ -11,6 +11,23 @@ ul {
   padding: 0;
 }
 
+table {
+  display: table;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+
 .header__heading {
   margin-bottom: 0;
 }
@@ -185,6 +202,7 @@ a {
 .domain__form {
   transition: background-color 500ms;
   -webkit-transition: background-color 500ms;
+  margin-bottom: 40px;
 }
 
 .domain__form:focus, .domain__form:hover {
@@ -262,59 +280,44 @@ a {
 }
 
 /* End of domain input */
-
+/* Table price */
 
 .table__price {
-  position: relative;
-  top: 40px;
   border: 1px solid #d9d9d9;
-  height: 193px;
-  width: 100%;
-
+  padding: 7px;
 }
 
 .domain__table {
-  width: 94.4%;
-  height: 83%;
-  margin: 16px 2.8%;
-}
-.table_price_row {
   width: 100%;
-
 }
+
+.table__price__cell:not(:last-child) {
+  border-right: 1px solid #d9d9d9;
+}
+
+.table__first_row > .table__price__cell {
+  border-bottom: 1px solid #d9d9d9;
+}
+
 .table__price__cell {
+  position: relative;
   width: 25%;
-  border-bottom: 1px solid #d9d9d9;
-  border-right: 1px solid #d9d9d9;
-}
-
-.table__price__cell-down {
-  width: 25%;
-  border-right: 1px solid #d9d9d9;
-}
-
-.table__price__cell-last {
-  width: 25%;
-  border-bottom: 1px solid #d9d9d9;
-}
-
-.table__price__cell, .table__price__cell-last, .table__price__cell-down, .table__price__cell-down-last {
+  padding: 5px 5px;
   text-align: center;
   font-size: 14px;
   text-transform: capitalize;
   color: #cbcbcb;
   font-weight: 400;
-  height: 50%;
 }
 
-.table__price__cell::after {
-  position: relative;
+.table__first_row .table__price__cell:not(:last-child)::after {
+  position: absolute;
   content: "";
   display: block;
-  width: 13px;
-  height: 13px;
-  left: 97.3%;
-  top: 30px;
+  width: 14px;
+  height: 14px;
+  right: -7px;
+  bottom: -7px;
   background-color: #fff;
 }
 
@@ -879,3 +882,39 @@ ul {
 a:hover, a:focus {
   text-decoration: none;
 }
+
+
+
+/*
+Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .table__price {
+    padding: 15px 26px;
+  }
+
+  .table__price__cell {
+    padding: 23px 10px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+
