@@ -171,14 +171,19 @@ a {
   display:block;
 }
 
+.domain {
+  padding-top: 88px;
+  padding-bottom: 92px;
+}
+
 .domain-text {
-  position: relative;
-  top: 91px;
+  margin-bottom: 50px;
 }
 
 .domain-text-heading {
   font-size: 24px;
   color: #383737;
+  margin-bottom: 18px
 }
 
 .domain__price__description {
@@ -186,16 +191,11 @@ a {
   font-weight: 100;
   color: #a2a2a2;
   font-size: 16px;
-  margin-top: 15px;
 }
 
-.domain__search__table {
-
-  width: 100%;
+.buy__domain {
   max-width: 888px;
   margin: auto;
-  position: relative;
-  top: 115px;
   color: #cbcbcb;
 }
 
@@ -337,8 +337,6 @@ a {
 }
 
 .main-package-image {
-  position: relative;
-  top: 200px;
   height: 383px;
   width: 100%;
   background: url("img/packages-photo.png");
