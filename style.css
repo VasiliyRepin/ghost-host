@@ -127,9 +127,6 @@ h1 {
   padding: 0;
 }
 
-.row {
-  margin: 0;
-}
 
 .login {
   width: 52%;
@@ -212,6 +209,7 @@ a {
 .search-common {
   align-items: center;
   padding: 10px 0;
+  margin: 0;
 }
 .domain__form-www {
   border-right: 1px solid #d9d9d9;
@@ -295,7 +293,7 @@ a {
 }
 
 /* End of domain input */
-/* Table price */
+/* Table selection price */
 
 .table__price {
   border: 1px solid #d9d9d9;
@@ -336,81 +334,75 @@ a {
   background-color: #fff;
 }
 
-.main-package-image {
-  height: 383px;
-  width: 100%;
+/* End of Table selection price */
+
+.price-overlay {
+  min-height: 386px;
   background: url("img/packages-photo.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #503c3c;
+}
+
+.price {
+  margin-top: -280px;
+  margin-bottom: 50px;
 }
 
 
 .hosting__item {
-  width: 100%;
-  height: 565px;
-  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
   border-top: 5px solid grey;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  padding-top: 35px;
-  padding-right: 28px;
-  padding-bottom: 17px;
-  padding-left: 27px;
+  padding: 36px 25px;
   text-align: center;
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
-  -webkit-transition: margin 150ms ease-out;
-  transition: margin 150ms ease-out;
-  z-index: 1;
-  transition: width 800ms;
-  -webkit-transition: width 800ms;
+  margin-bottom: 40px;
 }
 
 .hosting__item:focus, .hosting__item:hover {
-  width: 230px;
+
 }
 
 .hosting__picture {
-  margin: auto;
   width: 60px;
   height: 60px;
 }
 
 .anchor {
-  background-image: url("img/anchor.png");
-
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background: url(img/anchor.png) 100% no-repeat;
 }
 
 .hosting__heading {
-  margin: 18px auto;
+  padding: 18px 0;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0;
   text-transform: uppercase;
 }
 
 .hosting__table-wrapper {
+  width: 100%;
   border-top: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
   margin-bottom: 30px;
   padding: 8px 0;
 }
-
 .hosting__table {
-  text-align: left;
-  width: 100%;
-  line-height: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hosting__table-head {
-  padding: 11px 0;
+  padding: 8px 0;
   font-weight: 300;
   color: #b4b4b4;
 }
 
-.hosting__table-cell {
-  text-align: right;
-}
 
 .hosting__dollar {
   font-size: 17px;
@@ -418,9 +410,6 @@ a {
 }
 
 .hosting__price {
-  margin: 0 auto;
-  padding-bottom: 5px;
-  width: 105px;
   font-size: 28px;
   font-weight: 700;
   color: #2c2c2c;
@@ -435,9 +424,6 @@ a {
 }
 
 .hosting__select {
-  position: relative;
-  top: 10px;
-  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -922,7 +908,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
+  .hosting__item {
+    margin-bottom: 0;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
