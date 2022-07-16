@@ -1,3 +1,8 @@
+/* TODO
+1. add click event to domain list
+2. calculate length of slider buttons
+ */
+
 body {
   font-family: 'Lato', sans-serif;
 }
@@ -582,22 +587,19 @@ a {
 }
 
 .blog__content {
-  padding-top: 46px;
-  padding-bottom: 45px;
-}
-
-.blog__comments {
-  height: 97px;
+  padding: 45px 0;
   width: 100%;
 }
 
+
 .carousel-item {
-  height: 97px;
+  min-height: 97px;
 }
 
 .carousel-caption {
   padding: 0;
-  bottom: auto;
+  bottom: 0;
+  top: 0;
 }
 
 .blog__comment {
@@ -622,9 +624,7 @@ blockquote {
 
 .carousel-indicators {
   border-left: 1px solid #ffffff;
-  padding-left: 12px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: 4px 12px;
   right: 22%;
   left: auto;
   bottom: -13px;
@@ -633,7 +633,7 @@ blockquote {
 .carousel-indicators li {
   width: 8px;
   height: 8px;
-  border: 1px solid white;
+  border: 1px solid #fff;
   border-radius: 100%;
   background-color: transparent;
   margin: 0 6px;
