@@ -640,7 +640,7 @@ blockquote {
 }
 
 .service {
-  margin-bottom: 97px;
+  margin: 97px 0;
 }
 
 .service__common {
@@ -650,11 +650,10 @@ blockquote {
 }
 
 .service__img {
-  border-radius: 30px;
+  position: relative;
+  border-radius: 50%;
   width: 60px;
   height: 60px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .service__img-fast {
@@ -674,7 +673,7 @@ blockquote {
 }
 
 .icon-center {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -691,14 +690,16 @@ blockquote {
 }
 
 .service__lonely {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 98px;
+  margin-bottom: 15px;
+}
+
+.service__lonely a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .service__description {
-  font-size: 16px;
   line-height: 22px;
   font-weight: 300;
   color: #7e7e7e;
