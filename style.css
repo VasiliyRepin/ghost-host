@@ -54,13 +54,9 @@ a {
   flex-direction: column;
 }
 
-.header__heading {
-  margin-bottom: 0;
-}
 
 .image__logo {
-  position: absolute;
-  top: 30px;
+  width: 133px;
 }
 
 .header__background {
@@ -70,34 +66,28 @@ a {
   background-size: cover;
 }
 
-
-
-
 .header__common {
-  display: flex;
-  align-items: center;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header__nav {
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-
-  border-bottom: 1px solid rgba(255,255,255,0.15);
+  background: rgb(255,255,255, .15);
 }
 
-
-.navbar {
-  padding-right: 0;
+.navbar-toggler {
+  border: 1px solid rgb(255,255,255, .1);
 }
+
 
 .nav-link {
-  padding-right: 0;
-  padding-top: 32px;
-  height: 88px;
-  margin-left: 52px;
-  color: white;
+  color: #ffffff;
   font-family: Lato;
-  font-size: 16px;
-  transition: border 1500ms;
-  -webkit-transition: border 1500ms;
+  border: 1px solid transparent;
+  transition: all 500ms;
+  -webkit-transition: all 500ms;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -111,10 +101,6 @@ a {
   color: #ffffff;
 }
 
-h1 {
-  font-size: 72px;
-  text-align: center;
-}
 
 .header__welcome {
   font-family: "Myriad Pro", "Arial", sans-serif;
@@ -132,7 +118,7 @@ h1 {
   line-height: 47px;
 }
 
-.heaader__bottom {
+.header__bottom {
   display: flex;
   height: 116px;
   overflow: hidden;
@@ -161,7 +147,7 @@ h1 {
   margin-right: -20px;
 }
 
-.heaader__bottom a {
+.header__bottom a {
   transform: skewX(20deg);
   text-transform: uppercase;
   font-size: 22px;
@@ -735,7 +721,6 @@ blockquote {
 }
 
 .footer__logo-img {
-  width: 133px;
   filter: alpha(Opacity=25);
   opacity: 0.25;
   transition: opacity 500ms;
@@ -927,6 +912,28 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .header__nav {
+    background: none;
+    padding: 0;
+  }
+
+  .header__common {
+    max-width: 960px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+  }
+
+  .header__nav .navbar-collapse {
+    flex-grow: 0;
+  }
+
+  .nav-link {
+    padding: 32px 4px;
+  }
+
+  .nav-item:not(:last-child) {
+    margin-right: 52px;
+  }
+
   .hosting__item {
     margin-bottom: 0;
   }
@@ -945,7 +952,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
+  .header__common {
+    max-width: 1140px;
+  }
 }
 
 
