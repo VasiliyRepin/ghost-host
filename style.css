@@ -15,6 +15,9 @@ input, input:focus, button {
   border: none;
   outline: none;
 }
+button:focus {
+  outline: none;
+}
 
 a:hover, a:focus {
   text-decoration: none;
@@ -92,7 +95,6 @@ a {
 
 .nav-link:hover, .nav-link:focus {
   cursor: pointer;
-  border-bottom: 1px solid #ffffff;
   color: #9e9e9e;
 }
 
@@ -217,6 +219,10 @@ a {
 .domain__form-www {
   border-right: 1px solid #d9d9d9;
 }
+.domain__search {
+  border-right: 1px solid #d9d9d9;
+}
+
 
 .search-srting {
   width: 100%;
@@ -242,9 +248,10 @@ a {
 
 .domain__select-common {
   position: relative;
-  border-left: 1px solid #d9d9d9;
   text-align: center;
-  padding: 0 30px 0 15px;
+  padding: 10px 30px 10px 15px;
+  margin: -10px 0;
+  cursor: pointer
 }
 
 .domain__select-common ul, .domain__form {
@@ -261,22 +268,28 @@ a {
 }
 
 .domain__select {
-  display: none;
   position: absolute;
   left: 0;
-  right: 0;
-  top: 36px;
+  right: -1px;
+  top: 100%;
+  visibility:hidden;
+  opacity:0;
+  transition:visibility 0s linear 0.5s,opacity 0.5s linear;
   background: #fff;
   z-index: 1;
-  margin: 0 -1px;
+
+
 }
 
-.domain__select li {
+
+.domain__select-item {
   padding: 11px 0;
 }
 
-.domain__select-common:hover > ul {
-  display: block;
+.domain__select-common.is-active > ul {
+  visibility:visible;
+  opacity:1;
+  transition-delay:0s;
 }
 
 .select__arrow__down {
@@ -928,6 +941,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
   .nav-link {
     padding: 32px 4px;
+  }
+
+  .nav-link:hover, .nav-link:focus {
+    cursor: pointer;
+    border-bottom: 1px solid #ffffff;
+    color: #9e9e9e;
   }
 
   .nav-item:not(:last-child) {
