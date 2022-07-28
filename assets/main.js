@@ -1,3 +1,4 @@
+// Domain zone
 $(".domain__select-common").click(function (e) {
   e.preventDefault();
   $(this).toggleClass("is-active");

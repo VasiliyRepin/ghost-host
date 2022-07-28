@@ -202,13 +202,18 @@ a {
 }
 
 .domain__form {
-  transition: background-color 500ms;
-  -webkit-transition: background-color 500ms;
   margin-bottom: 40px;
 }
 
-.domain__form:focus, .domain__form:hover {
-  background-color: #dfdfdf;
+.domain__form, .table__price {
+  box-shadow: none;
+  transition: box-shadow .5s;
+}
+
+
+
+.domain__form:hover, .domain__form:focus, .table__price:hover, .table__price:focus {
+  box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, .02);
 }
 
 .search-common {
@@ -216,6 +221,11 @@ a {
   padding: 10px 0;
   margin: 0;
 }
+
+.domain__search {
+
+}
+
 .domain__form-www {
   border-right: 1px solid #d9d9d9;
 }
@@ -284,6 +294,7 @@ a {
 
 .domain__select-item {
   padding: 11px 0;
+  transition: background .5s;
 }
 
 .domain__select-common.is-active > ul {
@@ -296,12 +307,20 @@ a {
   pointer-events: none;
   background-color: transparent;
   color: #cbcbcb!important;
-  padding-right: 5px;
   font-size: 14px;
   position: absolute;
   top: 50%;
-  right: 8px;
+  right: 16%;
   transform: translateY(-50%);
+  transition: .5s transform;
+}
+
+.domain__select-common.is-active .select__arrow__down {
+  transform: rotate(180deg) translateY(50%);
+}
+
+.domain__select-item:hover, .domain__select-item:focus {
+  background: rgba(0, 0, 0, .02);
 }
 
 .domain__form-www, .search-srting, .domain__select-btn {
