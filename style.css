@@ -622,15 +622,7 @@ a {
 }
 
 
-.carousel-item {
-  min-height: 97px;
-}
 
-.carousel-caption {
-  padding: 0;
-  bottom: 0;
-  top: 0;
-}
 
 .blog__comment {
   font-size: 20px;
@@ -644,7 +636,7 @@ a {
   line-height: 20px;
   font-weight: bold;
   font-style: normal;
-  margin-right: 12px;
+  margin-right: 122px;
 }
 
 
@@ -652,12 +644,21 @@ blockquote {
   margin: 0;
 }
 
+.carousel-content {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  color: #ffffff;
+}
+
 .carousel-indicators {
   border-left: 1px solid #ffffff;
   padding: 4px 12px;
   right: 22%;
   left: auto;
-  bottom: -13px;
+  bottom: 3px;
+  margin: 0;
+  transition: right .5s;
 }
 
 .carousel-indicators li {
