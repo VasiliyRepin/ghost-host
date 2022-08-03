@@ -10,92 +10,92 @@
     <title>Hosting</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container-fluid header__background p-0">
-      <div class="header__wrapper">
+      <div class="header__content">
 
-            <div class="header__common">
+            <div class="header__menu">
 
 
             <nav class="header__nav navbar navbar-expand-lg">
-              <a class="navbar-brand header__logo" href="./index.htm">
-                <img class="image__logo" src="./img/logo.png" alt="Ghost Host">
+              <a class="navbar-brand logo header__logo-link" href="./index.htm">
+                <img class="logo__img header__logo-img" src="./img/logo.png" alt="Ghost Host">
               </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
+              <button class="header__menu-button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="header__menu-ico" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Domain</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Hosting</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Clients</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+              <ul class="menu navbar-nav">
+                <li class="menu__item nav-item"><a class="menu__link nav-link" href="#">Home</a></li>
+                <li class="menu__item nav-item"><a class="menu__link nav-link" href="#">Domain</a></li>
+                <li class="menu__item nav-item"><a class="menu__link nav-link" href="#">Hosting</a></li>
+                <li class="menu__item nav-item"><a class="menu__link nav-link" href="#">Clients</a></li>
+                <li class="menu__item nav-item"><a class="menu__link nav-link" href="#">Blog</a></li>
+                <li class="menu__item nav-item"><a class="menu__link nav-link" href="#">Support</a></li>
               </ul>
               </div>
             </nav>
           </div>
-          <article class="header__center">
-            <h2 class="header__welcome">HELLO!</h2>
-            <p class="header__welcome-description m-0">We love our work...</p>
-              <p class="header__welcome-description">And We're taking it seriously...</p>
-          </article>
+            <article class="header__title">
+              <h2 class="header__title-text">HELLO!</h2>
+              <p class="header__subtitle m-0">We love our work...</p>
+              <p class="header__subtitle">And We're taking it seriously...</p>
+            </article>
 
-        <div class="header__bottom">
-          <div class="login">
-              <a class="login-register-text" href="#">LOGIN</a>
+        <div class="header__auth auth">
+          <div class="auth__login">
+              <a class="auth__link" href="#">LOGIN</a>
           </div>
-          <div class="register">
-              <a class="login-register-text" href="#">REGISTER</a>
+          <div class="auth__register">
+              <a class="auth__link" href="#">REGISTER</a>
           </div>
         </div>
       </div>
       </div>
     </header>
-    <main>
+    <main class="main">
 
-        <section class="col domain">
+        <section class="col main__domain domain">
 
-          <div class="buy__domain center-block">
-            <div class="text-center domain-text">
-            <h3 class="domain-text-heading">Would you like to buy a new domain ?</h3>
-            <p class="domain__price__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor mauris ac nulla interdum, id molestier.</p>
+          <div class="domain__content center-block">
+            <div class="text-center domain__text">
+            <h3 class="domain__title">Would you like to buy a new domain ?</h3>
+            <p class="domain__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor mauris ac nulla interdum, id molestier.</p>
             </div>
-            <div class="domain__search__table">
-              <div class="domain__form">
-                <form class="row search-common">
-                  <div class="col-auto d-none d-sm-flex domain__form-www">
-                    <span class="">www.</span>
+            <div class="domain__search">
+              <div class="domain__form-content">
+                <form class="row domain__form search-form">
+                  <div class="col-auto d-none d-sm-flex search-form__www-content">
+                    <span class="search-form__www">www.</span>
                   </div>
-                  <div class="col domain__search">
-                    <input class="search-srting" type="text" name="search-input" placeholder="What do you want?">
+                  <div class="col search-form__content">
+                    <input class="search-form__input" type="text" name="search-input" placeholder="What do you want?">
                   </div>
-                  <div class="col-auto domain__select-common">
-                    <button class="domain__select-btn">.com</button>
-                    <ul class="domain__select">
-                      <li class="domain__select-item" value=".net">.net</li>
-                      <li class="domain__select-item" value=".org">.org</li>
-                      <li class="domain__select-item" value=".com">.com</li>
+                  <div class="col-auto search-form__select">
+                    <button class="search-form__select-button">.com</button>
+                    <ul class="search-form__select-menu">
+                      <li class="seaech-form__select-item" value=".net">.net</li>
+                      <li class="seaech-form__select-item" value=".org">.org</li>
+                      <li class="seaech-form__select-item" value=".com">.com</li>
                     </ul>
-                    <i class="fas fa-angle-down select__arrow__down"></i>
+                    <i class="search-form__select-icon fas fa-angle-down select__arrow__down"></i>
                   </div>
                 </form>
               </div>
-              <div class="table__price">
-                <table class="domain__table">
-                  <tbody>
-                    <tr class="table_price_row table__first_row">
-                      <th class="table__price__cell">.COM</th>
-                      <td class="table__price__cell">1 Year</td>
-                      <td class="table__price__cell">$9.00 USD</td>
-                      <td class="table__price__cell">Transfer Price No</td>
+              <div class="domain__table-content">
+                <table class="domain__table table-price">
+                  <tbody class="table-price__body">
+                    <tr class="table-price__row table-price__first-row">
+                      <th class="table-price__cell">.COM</th>
+                      <td class="table-price__cell">1 Year</td>
+                      <td class="table-price__cell">$9.00 USD</td>
+                      <td class="table-price__cell">Transfer Price No</td>
                      </tr >
-                    <tr class="table_price_row table__second_row">
-                      <th class="table__price__cell">.NET</th>
-                      <td class="table__price__cell">1 Year</td>
-                      <td class="table__price__cell">$9.00 USD</td>
-                      <td class="table__price__cell">Transfer Price No</td>
+                    <tr class="table-price__row table-price__second-row">
+                      <th class="table-price__cell">.NET</th>
+                      <td class="table-price__cell">1 Year</td>
+                      <td class="table-price__cell">$9.00 USD</td>
+                      <td class="table-price__cell">Transfer Price No</td>
                     </tr>
                   </tbody>
                 </table>
@@ -105,86 +105,86 @@
 
         </section>
 
-        <section class="price-overlay"></section>
+        <section class="price-background"></section>
         <section class="price">
          <article>
            <div class="container">
           <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-3">
-              <div class="hosting__item hosting__item__basic">
-                <div class="hosting__picture anchor"></div>
-                <h3 class="hosting__heading">Basic package</h3>
-                <ul class="hosting__table-wrapper">
-                  <li class="hosting__table">
-                      <span class="hosting__table-head">Disk Space (GB)</span>
-                      <span class="hosting__table-cell">50</span>
+            <div class="col-sm-6 col-md-6 col-lg-3 hosting">
+              <div class="hosting__item hosting__item_basic">
+                <div class="hosting__img anchor"></div>
+                <h3 class="hosting__title">Basic package</h3>
+                <ul class="hosting__menu">
+                  <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Disk Space (GB)</span>
+                      <span class="hosting__menu-count">50</span>
                   </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Subdomains</span>
-                      <span class="hosting__table-cell">50</span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Subdomains</span>
+                      <span class="hosting__menu-count">50</span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Transfer (GB)</span>
-                      <span class="hosting__table-cell">50</span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Transfer (GB)</span>
+                      <span class="hosting__menu-count">50</span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Data bases</span>
-                      <span class="hosting__table-cell">1</span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Data bases</span>
+                      <span class="hosting__menu-count">1</span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Dashboards</span>
-                      <span class="hosting__table-cell">1</span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Dashboards</span>
+                      <span class="hosting__menu-count">1</span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Control Panel & FTP</span>
-                      <span class="hosting__table-head"></span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Control Panel & FTP</span>
+                      <span class="hosting__menu-count"></span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Free Support</span>
-                      <span class="hosting__table-head"></span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Free Support</span>
+                      <span class="hosting__menu-count"></span>
                     </li>
                 </ul>
-                <div class="hosting__select__plan">
+                <div class="hosting__select-plan">
                   <p class="hosting__price">
                     <sup class="hosting__dollar">$</sup>15
                     <span class="hosting__month">/Mo</span>
                   </p>
-                  <a href="#" class="hosting__select">Select plan</a>
+                  <a href="#" class="hosting__link">Select plan</a>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-3">
-              <div class="hosting__item hosting__item__normal">
-                <div class="hosting__picture star"></div>
-                <h3 class="hosting__heading">Normal package</h3>
-                <ul class="hosting__table-wrapper">
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Disk Space (GB)</span>
-                      <span class="hosting__table-cell">100</span>
+            <div class="col-sm-6 col-md-6 col-lg-3 hosting">
+              <div class="hosting__item hosting__item_normal">
+                <div class="hosting__img star"></div>
+                <h3 class="hosting__title">Normal package</h3>
+                <ul class="hosting__menu">
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Disk Space (GB)</span>
+                      <span class="hosting__menu-count">100</span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Subdomains</span>
-                      <span class="hosting__table-cell">100</span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Subdomains</span>
+                      <span class="hosting__menu-count">100</span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Transfer (GB)</span>
-                      <span class="hosting__table-cell">100</span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Transfer (GB)</span>
+                      <span class="hosting__menu-count">100</span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Data bases</span>
-                      <span class="hosting__table-cell">2</span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Data bases</span>
+                      <span class="hosting__menu-count">2</span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Dashboards</span>
-                      <span class="hosting__table-cell">2</span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Dashboards</span>
+                      <span class="hosting__menu-count">2</span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Control Panel & FTP</span>
-                      <span class="hosting__table-head"></span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Control Panel & FTP</span>
+                      <span class="hosting__menu-count"></span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Free Support</span>
-                      <span class="hosting__table-head"></span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Free Support</span>
+                      <span class="hosting__menu-count"></span>
                     </li>
                   </ul>
                 <div class="hosting__select__plan">
@@ -192,42 +192,42 @@
                     <sup class="hosting__dollar">$</sup>30
                     <span class="hosting__month">/Mo</span>
                   </p>
-                  <a href="#" class="hosting__select">Select plan</a>
+                  <a href="#" class="hosting__link">Select plan</a>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-3">
-              <div class="hosting__item hosting__item__big">
-                <div class="hosting__picture big__package"></div>
-                <h3 class="hosting__heading">Big package</h3>
-                <ul class="hosting__table-wrapper">
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Disk Space (GB)</span>
-                      <span class="hosting__table-cell">150</span>
+            <div class="col-sm-6 col-md-6 col-lg-3 hosting">
+              <div class="hosting__item hosting__item_big">
+                <div class="hosting__img big__package"></div>
+                <h3 class="hosting__title">Big package</h3>
+                <ul class="hosting__menu">
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Disk Space (GB)</span>
+                      <span class="hosting__menu-count">150</span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Subdomains</span>
-                      <span class="hosting__table-cell">150</span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Subdomains</span>
+                      <span class="hosting__menu-count">150</span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Transfer (GB)</span>
-                      <span class="hosting__table-cell">150</span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Transfer (GB)</span>
+                      <span class="hosting__menu-count">150</span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Data bases</span>
-                      <span class="hosting__table-cell">4</span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Data bases</span>
+                      <span class="hosting__menu-count">4</span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Dashboards</span>
-                      <span class="hosting__table-cell">4</span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Dashboards</span>
+                      <span class="hosting__menu-count">4</span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Control Panel & FTP</span>
-                      <span class="hosting__table-head"></span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Control Panel & FTP</span>
+                      <span class="hosting__menu-count"></span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Free Support</span>
-                      <span class="hosting__table-head"></span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Free Support</span>
+                      <span class="hosting__menu-count"></span>
                     </li>
                 </ul>
                 <div class="hosting__select__plan">
@@ -235,42 +235,42 @@
                     <sup class="hosting__dollar">$</sup>40
                     <span class="hosting__month">/Mo</span>
                   </p>
-                  <a href="#" class="hosting__select">Select plan</a>
+                  <a href="#" class="hosting__link">Select plan</a>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-3">
-              <div class="hosting__item hosting__item__biggest">
-                <div class="hosting__picture diamond"></div>
-                <h3 class="hosting__heading">Biggest package</h3>
-                <ul class="hosting__table-wrapper">
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Disk Space (GB)</span>
-                      <span class="hosting__table-cell">250</span>
+            <div class="col-sm-6 col-md-6 col-lg-3 hosting">
+              <div class="hosting__item hosting__item_biggest">
+                <div class="hosting__img diamond"></div>
+                <h3 class="hosting__title">Biggest package</h3>
+                <ul class="hosting__menu">
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Disk Space (GB)</span>
+                      <span class="hosting__menu-count">250</span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Subdomains</span>
-                      <span class="hosting__table-cell">250</span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Subdomains</span>
+                      <span class="hosting__menu-count">250</span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Transfer (GB)</span>
-                      <span class="hosting__table-cell">250</span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Transfer (GB)</span>
+                      <span class="hosting__menu-count">250</span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Data bases</span>
-                      <span class="hosting__table-cell">6</span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Data bases</span>
+                      <span class="hosting__menu-count">6</span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Dashboards</span>
-                      <span class="hosting__table-cell">6</span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Dashboards</span>
+                      <span class="hosting__menu-count">6</span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Control Panel & FTP</span>
-                      <span class="hosting__table-head"></span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Control Panel & FTP</span>
+                      <span class="hosting__menu-count"></span>
                     </li>
-                    <li class="hosting__table">
-                      <span class="hosting__table-head">Free Support</span>
-                      <span class="hosting__table-head"></span>
+                    <li class="hosting__menu-item">
+                      <span class="hosting__menu-title">Free Support</span>
+                      <span class="hosting__menu-count"></span>
                     </li>
                     </tbody>
                   </tabl>
@@ -280,7 +280,7 @@
                     <sup class="hosting__dollar">$</sup>70
                     <span class="hosting__month">/Mo</span>
                   </p>
-                  <a href="#" class="hosting__select">Select plan</a>
+                  <a href="#" class="hosting__link">Select plan</a>
                 </div>
               </div>
             </div>
@@ -291,13 +291,13 @@
 
       </section>
       <div class="container"><hr class="border-dashed"></div>
-        <section class="about__us">
+        <section class="about">
           <div class="container">
             <div class="row">
               <div class="col-sm-12 col-md-5 col-lg-5">
                 <article class="about__text">
-                    <h3 class="about__heading">About <span>Us</span></h3>
-                    <p class="about__heading__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat eget diam sit amet molestie.Curabitur. ut ipsum bibendum tortor lacinia fermentum nec joeıa. Mauris at augue libero. Fusce posuere, sapien nec poır. Uaee augsuada sed mauris in tincidunt...
+                    <h3 class="about__title">About <span>Us</span></h3>
+                    <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat eget diam sit amet molestie.Curabitur. ut ipsum bibendum tortor lacinia fermentum nec joeıa. Mauris at augue libero. Fusce posuere, sapien nec poır. Uaee augsuada sed mauris in tincidunt...
                     </p>
                   </article>
               </div>
@@ -308,48 +308,48 @@
                     <div class="row m-0">
                       <div class="col-sm-4 col-md-6 col-lg-4">
                     <div class="about__author">
-                      <div class="about__author__common">
+                      <div class="about__author-content">
                         <figure>
-                            <img class ="about__author-round" src="img/author1.png"/>
+                            <img class ="about__author-img" src="img/author1.png"/>
                           <figcaption class="about__author-name">Jonny Doe</figcaption>
                         </figure>
                         <span class="about__author-profession">Designer</span>
-                        <div class="about__icons-group">
-                          <a class="icons" href="www.facebook.com" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                          <a class="icons" href="www.twitter.com" title="Twitter"><i class="fab fa-twitter"></i></a>
-                          <a class="icons" href="www.link.com" title="link"><i class="fa fa-link" aria-hidden="true"></i></a>
+                        <div class="about__icons">
+                          <a class="about__icons-link" href="www.facebook.com" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                          <a class="about__icons-link" href="www.twitter.com" title="Twitter"><i class="fab fa-twitter"></i></a>
+                          <a class="about__icons-link" href="www.link.com" title="link"><i class="fa fa-link" aria-hidden="true"></i></a>
                         </div>
                       </div>
                     </div>
                       </div>
                       <div class="col-sm-4 col-md-6 col-lg-4">
                     <div class="about__author">
-                      <div class="about__author__common">
+                      <div class="about__author-content">
                         <figure>
-                          <img class ="about__author-round" src="img/author2.png">
+                          <img class ="about__author-img" src="img/author2.png">
                           <figcaption class="about__author-name">John Doe</figcaption>
                         </figure>
                         <span class="about__author-profession">Designer</span>
-                        <div class="about__icons-group">
-                          <a class="icons" href="www.facebook.com" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                          <a class="icons" href="www.twitter.com" title="Twitter"><i class="fab fa-twitter"></i></a>
-                          <a class="icons" href="www.link.com" title="link"><i class="fa fa-link" aria-hidden="true"></i></a>
+                        <div class="about__icons">
+                          <a class="about__icons-link" href="www.facebook.com" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                          <a class="about__icons-link" href="www.twitter.com" title="Twitter"><i class="fab fa-twitter"></i></a>
+                          <a class="about__icons-link" href="www.link.com" title="link"><i class="fa fa-link" aria-hidden="true"></i></a>
                         </div>
                       </div>
                     </div>
                       </div>
                       <div class="col-sm-4 col-md-6 col-lg-4">
                         <div class="about__author">
-                         <div class="about__author__common">
+                         <div class="about__author-content">
                            <figure>
-                            <img class ="about__author-round" src="img/author3.png">
+                            <img class ="about__author-img" src="img/author3.png">
                             <figcaption class="about__author-name">Johnathan Doe</figcaption>
                            </figure>
                           <span class="about__author-profession">Designer</span>
-                           <div class="about__icons-group">
-                             <a class="icons" href="www.facebook.com" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                             <a class="icons" href="www.twitter.com" title="Twitter"><i class="fab fa-twitter"></i></a>
-                             <a class="icons" href="www.link.com" title="link"><i class="fa fa-link" aria-hidden="true"></i></a>
+                           <div class="about__icons">
+                             <a class="about__icons-link" href="www.facebook.com" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                             <a class="about__icons-link" href="www.twitter.com" title="Twitter"><i class="fab fa-twitter"></i></a>
+                             <a class="about__icons-link" href="www.link.com" title="link"><i class="fa fa-link" aria-hidden="true"></i></a>
                            </div>
                           </div>
                         </div>
@@ -366,14 +366,14 @@
                 <div class="blog__content">
                   <h4 class="d-none">Blog's comments</h4>
                   <div id="sayCarousel" class="carousel slide" data-ride="false">
-                    <div class="blog__controls  d-lg-block">
-                      <ol class="carousel-indicators">
-                        <li data-target="#sayCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#sayCarousel" data-slide-to="1"></li>
-                        <li data-target="#sayCarousel" data-slide-to="2"></li>
+                    <div class="blog__controls control d-lg-block">
+                      <ol class="carousel-indicators control__list">
+                        <li data-target="#sayCarousel" data-slide-to="0" class="active control__item"></li>
+                        <li data-target="#sayCarousel" data-slide-to="1" class="control__item"></li>
+                        <li data-target="#sayCarousel" data-slide-to="2" class="control__item"></li>
                       </ol>
                     </div>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner carousel">
                       <div class="carousel-item active">
                         <div class="carousel-content">
                           <blockquote>
@@ -420,17 +420,18 @@
               </div>
             </div>
           </div>
+            </div>
         </section>
         <section class="service">
           <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-6 col-lg-3">
-                  <div class="service__lonely">
-                    <a href="#">
+                  <div class="service__content">
+                    <a class="service__link" href="#">
                       <div class="service__img service__img-fast">
-                        <img alt="fa-flash" class="icon-center" src="img/fa-flash.png">
+                        <img alt="fa-flash" class="sevice__img-center" src="img/fa-flash.png">
                       </div>
-                      <div class="text-center">
+                      <div class="service__text text-center">
                         <h4 class="service__title">Fast Servers</h4>
                         <p class="service__description">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
                       </div>
@@ -438,12 +439,12 @@
                   </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3">
-                  <div class="service__lonely">
-                    <a href="#">
+                  <div class="service__content">
+                    <a class="service__link" href="#">
                       <div class="service__img service__img-cloud">
-                        <img alt="fa-cloud" class="icon-center" src="img/fa-cloud.png">
+                        <img alt="fa-cloud" class="sevice__img-center" src="img/fa-cloud.png">
                       </div>
-                      <div class="text-center">
+                      <div class="service__text text-center">
                         <h4 class="service__title">Cloud Servers</h4>
                         <p class="service__description">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
                       </div>
@@ -451,12 +452,12 @@
                   </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3">
-                  <div class="service__lonely">
-                    <a href="#">
+                  <div class="service__content">
+                    <a class="service__link" href="#">
                       <div class="service__img service__img-transfer">
-                        <img alt="fa-arrows" class="icon-center" src="img/fa-arrows.png">
+                        <img alt="fa-arrows" class="sevice__img-center" src="img/fa-arrows.png">
                       </div>
-                      <div class="text-center">
+                      <div class=" service__text text-center">
                         <h4 class="service__title">Domain Transfer</h4>
                         <p class="service__description">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
                       </div>
@@ -464,12 +465,12 @@
                   </div>
                 </div>
                 <div class="col-sm-6 col-md-6 col-lg-3">
-                  <div class="service__lonely">
-                    <a href="#">
+                  <div class="service__content">
+                    <a class="service__link" href="#">
                       <div class="service__img service__img-support">
-                        <img alt="fa-comments" class="icon-center" src="img/fa-comments.png">
+                        <img alt="fa-comments" class="sevice__img-center" src="img/fa-comments.png">
                       </div>
-                      <div class="text-center">
+                      <div class="service__text text-center">
                         <h4 class="service__title">Live Support</h4>
                         <p class="service__description">Nulla dapibus neque augue, quis tincidunt tortor aliquam vitae.</p>
                       </div>
@@ -480,56 +481,56 @@
           </div>
         </section>
     </main>
-    <footer class="footer__common">
+    <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col">
-          <div class="footer__top__menu">
-            <a class="footer_logo" href="./index.htm">
-              <img class="image__logo footer__logo-img" src="./img/logo-2.png" alt="Our Logo">
+          <div class="footer__top">
+            <a class="footer_logo-link" href="./index.htm">
+              <img class="logo__img footer__logo-img_opacity" src="./img/logo-2.png" alt="Our Logo">
             </a>
-            <ul class="footer_navigation">
-              <li class="footer__navigation-item"><a class="footer_navigation-link" href="#">Home</a></li>
-              <li class="footer__navigation-item"><a class="footer_navigation-link" href="#">About us</a></li>
-              <li class="footer__navigation-item"><a class="footer_navigation-link" href="#">Blog</a></li>
-              <li class="footer__navigation-item"><a class="footer_navigation-link" href="#">Policy</a></li>
-              <li class="footer__navigation-item"><a class="footer_navigation-link" href="#">Contact</a></li>
+            <ul class="footer__menu">
+              <li class="footer__menu-item"><a class="footer_menu-link" href="#">Home</a></li>
+              <li class="footer__menu-item"><a class="footer_menu-link" href="#">About us</a></li>
+              <li class="footer__menu-item"><a class="footer_menu-link" href="#">Blog</a></li>
+              <li class="footer__menu-item"><a class="footer_menu-link" href="#">Policy</a></li>
+              <li class="footer__menu-item"><a class="footer_menu-link" href="#">Contact</a></li>
             </ul>
           </div>
           </div>
         </div>
-          <div class="row footer__second_row">
+          <div class="row footer__bottom-row">
           <div class="col-sm-6 col-lg-4">
-            <div class="footer__area-left">
-              <p class="foter__area-about">Lorem ipsum dolor sit amet, consecteteeseurı
+            <div class="footer__column-left footer-text">
+              <p class="footer-text__about">Lorem ipsum dolor sit amet, consecteteeseurı
                 adipiscing elit. Donec mollis commodoeesene
                 que, non commodo risus volutpat vel.
               </p>
-              <p class="m-0">Design by <a class="footer__copyright" href="#">Mert Can Eyriyer.</a></p>
+              <p class="m-0">Design by <a class="footer-text__copyright" href="#">Mert Can Eyriyer.</a></p>
 
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 footer__middle_wrapper">
-              <div class="footer__area-center">
-              <ul class="footer__area__column">
-                <li class="footer__area-item"><a class="footer__area-link" href="#">Support</a></li>
-                <li class="footer__area-item"><a class="footer__area-link" href="#">Account</a></li>
-                <li class="footer__area-item"><a class="footer__area-link" href="#">Product Catalog</a></li>
-                <li class="footer__area-item"><a class="footer__area-link" href="#">Shortcodes</a></li>
+          <div class="col-sm-6 col-lg-4 footer__center-content">
+              <div class="footer__column-center">
+              <ul class="footer__center-menu">
+                <li class="footer__center-item"><a class="footer__center-link" href="#">Support</a></li>
+                <li class="footer__center-item"><a class="footer__center-link" href="#">Account</a></li>
+                <li class="footer__center-item"><a class="footer__center-link" href="#">Product Catalog</a></li>
+                <li class="footer__center-item"><a class="footer__center-link" href="#">Shortcodes</a></li>
               </ul>
-              <ul class="footer__area__column">
-                <li class="footer__area-item"><a class="footer__area-link" href="#">Site Map</a></li>
-                <li class="footer__area-item"><a class="footer__area-link" href="#">Whois Search</a></li>
-                <li class="footer__area-item"><a class="footer__area-link" href="#">Web Mail</a></li>
-                <li class="footer__area-item"><a class="footer__area-link" href="#">Find Domain</a></li>
+              <ul class="footer__center-menu">
+                <li class="footer__center-item"><a class="footer__center-link" href="#">Site Map</a></li>
+                <li class="footer__center-item"><a class="footer__center-link" href="#">Whois Search</a></li>
+                <li class="footer__center-item"><a class="footer__center-link" href="#">Web Mail</a></li>
+                <li class="footer__center-item"><a class="footer__center-link" href="#">Find Domain</a></li>
               </ul>
               </div>
             </div>
           <div class="col-sm-12 col-lg-4">
-              <div class="footer__area-right">
-              <p class="footer__area-phone"><a class="phone__link" href="tel:+000000000000">0000-0000-0000</a></p>
-              <p class="footer__area-mail"><a class="email__link" href="mailto:informationteam@ghosthost.com">informationteam@ghosthost.com</a></p>
-              <p class="footer__area-adress">Lorem Ipsum Street, Lorem Avenue,  Lorem Ipsum </p>
+              <div class="footer__column-right">
+              <p class="footer__right-phone"><a class="footer__phone-link" href="tel:+000000000000">0000-0000-0000</a></p>
+              <p class="footer__right-mail"><a class="footer__email-link" href="mailto:informationteam@ghosthost.com">informationteam@ghosthost.com</a></p>
+              <p class="footer__right-address">Lorem Ipsum Street, Lorem Avenue,  Lorem Ipsum </p>
             </div>
             </div>
           </div>

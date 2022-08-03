@@ -1,13 +1,13 @@
 // Domain zone
-$(".domain__select-common").click( e => {
+$(".search-form__select").click( e => {
   e.preventDefault();
   $(e.currentTarget).toggleClass("is-active");
 });
 
-$( ".domain__select-item" ).click( ({currentTarget}) => {
+$( ".seaech-form__select-item" ).click( ({currentTarget}) => {
   const domain_zone = $(currentTarget).text();
   console.log("domai", domain_zone)
-  $(".domain__select-btn").text(domain_zone);
+  $(".search-form__select-button").text(domain_zone);
 });
 
 
