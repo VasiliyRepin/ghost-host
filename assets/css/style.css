@@ -70,7 +70,7 @@ a {
 .header__background {
   height: 944px;
   box-shadow:0 0 0 943px rgba(0, 0, 0, 0.8) inset;
-  background: url("img/background.png") no-repeat;
+  background: url("../../img/background.png") no-repeat;
   background-size: cover;
 }
 
@@ -377,7 +377,7 @@ a {
 
 .price-background {
   min-height: 386px;
-  background: url("img/packages-photo.png");
+  background: url("../../img/packages-photo.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #503c3c;
@@ -412,7 +412,7 @@ a {
 }
 
 .anchor {
-  background: url(img/anchor.png) 100% no-repeat;
+  background: url(../../img/anchor.png) 100% no-repeat;
 }
 
 .hosting-item__title {
@@ -500,7 +500,7 @@ a {
 }
 
 .star {
-  background-image: url("img/normal_package.png");
+  background-image: url("../../img/normal_package.png");
 
   background-size: 100%;
   background-repeat: no-repeat;
@@ -515,14 +515,14 @@ a {
 }
 
 .big__package {
-  background-image: url("img/big_package.png");
+  background-image: url("../../img/big_package.png");
 
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
 .diamond {
-  background-image: url("img/biggest.png");
+  background-image: url("../../img/biggest.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -633,7 +633,7 @@ a {
 
 
 .blog {
-  background: url("img/blog-background.png");
+  background: url("../../img/blog-background.png");
   background-size: cover;
 }
 
