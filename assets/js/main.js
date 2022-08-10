@@ -4,7 +4,7 @@ $(".search-form__select").click( e => {
   $(e.currentTarget).toggleClass("is-active");
 });
 
-$( ".seaech-form__select-item" ).click( ({currentTarget}) => {
+$( ".search-form__select-item" ).click( ({currentTarget}) => {
   const domain_zone = $(currentTarget).text();
   console.log("domai", domain_zone)
   $(".search-form__select-button").text(domain_zone);
