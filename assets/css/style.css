@@ -57,7 +57,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
 }
 
 
@@ -75,10 +74,9 @@ a {
 }
 
 .header__background {
-  height: 944px;
 
   background: url("../../img/background.png") no-repeat;
-  background-size: cover;
+  background-size: auto;
   box-shadow: 0 0 0 943px rgba(0, 0, 0, 0.8) inset;
 }
 
@@ -91,13 +89,21 @@ a {
 .header__nav {
   justify-content: space-between;
 
-  background: rgb(255,255,255, 0.15);
+  background: rgb(0,0,0, 0.95);
 }
 
 .navbar-toggler {
   border: 1px solid rgb(255,255,255, 0.1);
 }
 
+.navbar-collapse {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  right: 0px;
+  padding: 0px 1rem;
+  background: inherit;
+}
 
 .nav-link {
   font-family: Lato;
@@ -119,6 +125,7 @@ a {
 }
 
 .header__title {
+  padding: 130px 0;
   text-align: center;
   color: #ffffff;
 }
@@ -1139,6 +1146,19 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     flex-grow: 0;
   }
 
+  .navbar-collapse {
+    position: unset;
+    padding: 0;
+    top: auto;
+    left: auto;
+    right: auto;
+    background: none;
+  }
+
+  .header__background {
+    background-size: cover;
+  }
+
   .nav-link {
     padding: 32px 4px;
   }
@@ -1149,6 +1169,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
     border-bottom: 1px solid #ffffff;
     cursor: pointer;
+  }
+
+  .header__title {
+    padding: 260px 0;
   }
 
   .about__author {
